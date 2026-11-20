@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enterprise Knowledge Agent</title>
+<style>
+  :root { --bg:#f7f7f8; --card:#fff; --ink:#1d1d1f; --muted:#6b6b76; --line:#e3e3e8; --accent:#1a73e8; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#141417; --card:#1e1e23; --ink:#ececf1; --muted:#9a9aa6; --line:#2e2e36; --accent:#8ab4f8; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; font:15px/1.5 system-ui, -apple-system, Segoe UI, sans-serif; background:var(--bg); color:var(--ink); }
+  main { max-width: 860px; margin: 0 auto; padding: 24px 16px 64px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 20px; }
+  form { display:flex; gap:8px; }
+  input[type=text], input[type=password] { flex:1; padding:10px 12px; border:1px solid var(--line); border-radius:8px; background:var(--card); color:var(--ink); font:inherit; }
+  button { padding:10px 16px; border:0; border-radius:8px; background:var(--accent); color:#fff; font:inherit; cursor:pointer; }
+  button:disabled { opacity:.6; cursor:wait; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px; margin-top:16px; }
+  .answer { white-space: pre-wrap; }
+  .meta { display:flex; flex-wrap:wrap; gap:6px; margin-top:12px; }
+  .pill { font-size:12px; padding:2px 8px; border-radius:999px; border:1px solid var(--line); color:var(--muted); }
+  details { margin-top:12px; } summary { cursor:pointer; color:var(--muted); }
+  pre { overflow-x:auto; font-size:12px; background:var(--bg); padding:10px; border-radius:8px; }
+  .src { font-size:13px; margin:6px 0; } .src b { color: var(--accent); }
+  .keyrow { margin-bottom: 10px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Enterprise Knowledge Agent</h1>
+  <p class="sub">Multi-agent RAG over company documents and tables: router, retriever, SQL analyst, synthesizer and critic.</p>
+  <form class="keyrow" onsubmit="return false"><input id="key" type="password" placeholder="API key (if the server requires one)" autocomplete="off"></form>
+  <form id="f">
+    <input id="q" type="text" placeholder="e.g. Which region had the highest Q3 revenue, and what is the travel expense limit?" required maxlength="2000">
+    <button id="b">Ask</button>
+  </form>
+  <div id="out"></div>
+</main>
+<script>
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+$("f").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const q = $("q").value.trim(); if (!q) return;
+  $("b").disabled = true; $("out").innerHTML = '<div class="card">Thinking…</div>';
+  try {
+    const headers = {"Content-Type": "application/json"};
+    if ($("key").value) headers["X-API-Key"] = $("key").value;
+    const r = await fetch("/ask", {method: "POST", headers, body: JSON.stringify({question: q})});
+    const d = await r.json();
+    if (!r.ok) throw new Error(d.detail || r.statusText);
+    const m = d.metrics;
+    const sources = d.sources.map(s => `<div class="src"><b>[${s.ref}]</b> ${esc(s.citation)} ${s.cited ? "· cited" : ""}</div>`).join("");
+    $("out").innerHTML = `<div class="card">
+      <div class="answer">${esc(d.answer)}</div>
+      <div class="meta">
+        <span class="pill">route: ${esc(d.route)}</span>
+        <span class="pill">${m.latency_ms} ms</span>
+        <span class="pill">${m.total_tokens} tokens</span>
+        <span class="pill">${m.tokens_per_sec} tok/s</span>
+        <span class="pill">$${m.cost_usd}</span>
+        <span class="pill">revisions: ${d.revisions}</span>
+      </div>
+      ${sources ? `<details open><summary>Sources</summary>${sources}</details>` : ""}
+      ${d.sql ? `<details><summary>SQL</summary><pre>${esc(d.sql)}</pre></details>` : ""}
+      <details><summary>Agent trace</summary><pre>${esc(d.steps.join("  →  "))}\n\n${esc(JSON.stringify(d.trace, null, 2))}</pre></details>
+    </div>`;
+  } catch (err) {
+    $("out").innerHTML = `<div class="card">Error: ${esc(err.message)}</div>`;
+  } finally { $("b").disabled = false; }
+});
+</script>
+</body>
+</html>

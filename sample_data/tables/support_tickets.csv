@@ -1,0 +1,121 @@
+ticket_id,opened_month,product,region,priority,status,resolution_hours
+T-1001,2026-08,Lyra-C,APAC,P3,resolved,63.1
+T-1002,2026-07,Orion-D,APAC,P2,resolved,29.8
+T-1003,2026-09,Lyra-C,North America,P3,resolved,61.7
+T-1004,2026-08,Atlas-W,India,P3,resolved,52.7
+T-1005,2026-08,Atlas-W,APAC,P3,resolved,70.9
+T-1006,2026-07,Lyra-C,North America,P2,resolved,30.3
+T-1007,2026-09,Orion-D,APAC,P3,resolved,29.1
+T-1008,2026-09,Lyra-C,India,P3,resolved,61.4
+T-1009,2026-08,Lyra-C,Europe,P2,open,
+T-1010,2026-07,Lyra-C,Europe,P2,resolved,29.5
+T-1011,2026-08,Orion-D,India,P2,resolved,10.3
+T-1012,2026-09,Lyra-C,APAC,P2,resolved,20.1
+T-1013,2026-07,Lyra-C,Europe,P3,resolved,98.3
+T-1014,2026-08,Atlas-W,Europe,P2,resolved,14.5
+T-1015,2026-09,Orion-D,APAC,P2,resolved,23.0
+T-1016,2026-09,Atlas-W,North America,P3,resolved,75.9
+T-1017,2026-09,Orion-D,India,P3,resolved,97.5
+T-1018,2026-07,Orion-D,Europe,P2,resolved,25.8
+T-1019,2026-09,Atlas-W,North America,P3,resolved,33.2
+T-1020,2026-08,Atlas-W,North America,P1,resolved,2.2
+T-1021,2026-08,Atlas-W,APAC,P3,resolved,36.5
+T-1022,2026-08,Lyra-C,India,P2,resolved,31.8
+T-1023,2026-09,Orion-D,APAC,P2,resolved,29.0
+T-1024,2026-09,Orion-D,APAC,P3,resolved,25.9
+T-1025,2026-09,Atlas-W,APAC,P3,open,
+T-1026,2026-08,Lyra-C,Europe,P3,resolved,45.9
+T-1027,2026-08,Orion-D,Europe,P3,resolved,89.4
+T-1028,2026-07,Lyra-C,Europe,P3,open,
+T-1029,2026-08,Orion-D,North America,P3,resolved,67.5
+T-1030,2026-09,Atlas-W,APAC,P3,resolved,40.3
+T-1031,2026-08,Orion-D,North America,P3,resolved,53.4
+T-1032,2026-08,Atlas-W,North America,P2,resolved,17.5
+T-1033,2026-09,Orion-D,North America,P3,resolved,78.0
+T-1034,2026-07,Orion-D,India,P3,resolved,64.2
+T-1035,2026-08,Lyra-C,India,P2,resolved,35.2
+T-1036,2026-07,Orion-D,North America,P3,resolved,37.3
+T-1037,2026-09,Atlas-W,India,P3,resolved,79.1
+T-1038,2026-07,Lyra-C,North America,P3,resolved,70.1
+T-1039,2026-08,Lyra-C,Europe,P3,resolved,102.4
+T-1040,2026-09,Atlas-W,APAC,P1,resolved,4.4
+T-1041,2026-09,Orion-D,APAC,P3,resolved,29.1
+T-1042,2026-09,Orion-D,Europe,P3,resolved,67.4
+T-1043,2026-07,Lyra-C,North America,P2,resolved,32.4
+T-1044,2026-09,Atlas-W,North America,P2,resolved,28.3
+T-1045,2026-07,Orion-D,North America,P3,resolved,64.5
+T-1046,2026-08,Atlas-W,North America,P2,resolved,10.7
+T-1047,2026-09,Atlas-W,Europe,P3,resolved,66.5
+T-1048,2026-09,Lyra-C,Europe,P2,resolved,30.6
+T-1049,2026-09,Lyra-C,Europe,P3,resolved,101.9
+T-1050,2026-07,Orion-D,Europe,P2,resolved,20.4
+T-1051,2026-07,Orion-D,APAC,P1,resolved,6.0
+T-1052,2026-09,Atlas-W,North America,P2,resolved,21.1
+T-1053,2026-07,Orion-D,Europe,P3,resolved,80.1
+T-1054,2026-07,Lyra-C,APAC,P3,resolved,52.5
+T-1055,2026-08,Orion-D,India,P1,resolved,3.5
+T-1056,2026-09,Lyra-C,North America,P1,resolved,5.1
+T-1057,2026-07,Atlas-W,North America,P3,resolved,105.6
+T-1058,2026-07,Orion-D,APAC,P2,open,
+T-1059,2026-08,Atlas-W,India,P3,resolved,80.8
+T-1060,2026-08,Atlas-W,North America,P3,resolved,65.5
+T-1061,2026-07,Orion-D,APAC,P1,resolved,4.0
+T-1062,2026-07,Atlas-W,North America,P3,resolved,31.0
+T-1063,2026-09,Orion-D,India,P3,resolved,52.5
+T-1064,2026-07,Orion-D,Europe,P3,resolved,83.6
+T-1065,2026-08,Orion-D,Europe,P1,resolved,3.3
+T-1066,2026-07,Orion-D,APAC,P3,resolved,46.7
+T-1067,2026-07,Atlas-W,India,P1,resolved,4.7
+T-1068,2026-08,Atlas-W,India,P3,resolved,92.8
+T-1069,2026-09,Lyra-C,Europe,P3,resolved,66.6
+T-1070,2026-09,Atlas-W,Europe,P2,resolved,27.8
+T-1071,2026-07,Orion-D,North America,P3,open,
+T-1072,2026-07,Atlas-W,North America,P3,resolved,60.2
+T-1073,2026-08,Lyra-C,Europe,P3,resolved,80.3
+T-1074,2026-08,Lyra-C,North America,P2,resolved,12.4
+T-1075,2026-08,Orion-D,Europe,P2,resolved,35.6
+T-1076,2026-07,Atlas-W,APAC,P3,resolved,54.0
+T-1077,2026-07,Orion-D,North America,P1,resolved,5.3
+T-1078,2026-07,Atlas-W,India,P2,resolved,19.2
+T-1079,2026-09,Atlas-W,Europe,P2,resolved,10.4
+T-1080,2026-08,Lyra-C,India,P3,resolved,74.1
+T-1081,2026-09,Atlas-W,India,P2,resolved,12.1
+T-1082,2026-09,Lyra-C,North America,P3,resolved,100.4
+T-1083,2026-09,Lyra-C,Europe,P3,resolved,81.4
+T-1084,2026-07,Atlas-W,India,P1,resolved,3.6
+T-1085,2026-09,Orion-D,Europe,P3,resolved,76.6
+T-1086,2026-09,Orion-D,North America,P2,resolved,10.0
+T-1087,2026-07,Lyra-C,APAC,P3,resolved,63.8
+T-1088,2026-08,Atlas-W,India,P3,resolved,86.1
+T-1089,2026-08,Orion-D,North America,P1,open,
+T-1090,2026-08,Lyra-C,APAC,P3,resolved,74.4
+T-1091,2026-07,Lyra-C,India,P3,resolved,71.7
+T-1092,2026-07,Atlas-W,Europe,P3,open,
+T-1093,2026-08,Lyra-C,India,P3,resolved,48.0
+T-1094,2026-07,Atlas-W,India,P3,resolved,50.2
+T-1095,2026-08,Atlas-W,APAC,P2,resolved,22.2
+T-1096,2026-07,Orion-D,North America,P2,open,
+T-1097,2026-08,Lyra-C,Europe,P1,resolved,3.1
+T-1098,2026-09,Lyra-C,APAC,P3,resolved,98.5
+T-1099,2026-07,Atlas-W,North America,P3,resolved,57.1
+T-1100,2026-08,Orion-D,APAC,P3,resolved,85.1
+T-1101,2026-08,Orion-D,India,P2,resolved,8.0
+T-1102,2026-09,Atlas-W,APAC,P3,resolved,25.0
+T-1103,2026-09,Orion-D,North America,P2,resolved,36.0
+T-1104,2026-08,Orion-D,North America,P3,resolved,95.8
+T-1105,2026-07,Atlas-W,APAC,P3,resolved,102.6
+T-1106,2026-08,Orion-D,North America,P3,resolved,55.4
+T-1107,2026-07,Lyra-C,North America,P3,resolved,70.5
+T-1108,2026-07,Atlas-W,APAC,P3,resolved,75.7
+T-1109,2026-07,Orion-D,Europe,P1,open,
+T-1110,2026-09,Orion-D,APAC,P3,resolved,45.5
+T-1111,2026-08,Orion-D,North America,P3,resolved,70.8
+T-1112,2026-08,Atlas-W,Europe,P3,resolved,66.1
+T-1113,2026-08,Orion-D,India,P3,open,
+T-1114,2026-09,Atlas-W,North America,P3,resolved,38.7
+T-1115,2026-07,Orion-D,India,P2,resolved,23.9
+T-1116,2026-08,Orion-D,North America,P3,resolved,55.7
+T-1117,2026-07,Orion-D,Europe,P2,open,
+T-1118,2026-08,Atlas-W,India,P2,resolved,19.2
+T-1119,2026-07,Orion-D,India,P3,resolved,25.8
+T-1120,2026-08,Lyra-C,North America,P3,resolved,105.3

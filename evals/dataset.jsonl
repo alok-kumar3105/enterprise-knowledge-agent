@@ -1,0 +1,16 @@
+{"question": "How many days of paid annual leave do full-time employees get?", "expected_route": "docs", "expected_sources": ["leave_policy.md"], "must_include": ["24"]}
+{"question": "How much parental leave does a secondary caregiver get?", "expected_route": "docs", "expected_sources": ["leave_policy.md"], "must_include": ["6 weeks"]}
+{"question": "How many unused leave days can I carry over and when do they expire?", "expected_route": "docs", "expected_sources": ["leave_policy.md"], "must_include": ["5", "31 March"]}
+{"question": "What is the hotel limit per night in a high-cost city like London?", "expected_route": "docs", "expected_sources": ["expense_policy.md"], "must_include": ["260"]}
+{"question": "Within how many days must expense reports be submitted?", "expected_route": "docs", "expected_sources": ["expense_policy.md"], "must_include": ["30 days"]}
+{"question": "Can I fly business class on a long trip?", "expected_route": "docs", "expected_sources": ["expense_policy.md"], "must_include": ["Vice President"]}
+{"question": "What is the minimum password length?", "expected_route": "docs", "expected_sources": ["security_policy.md"], "must_include": ["14"]}
+{"question": "How quickly must a suspected security incident be reported?", "expected_route": "docs", "expected_sources": ["security_policy.md"], "must_include": ["1 hour"]}
+{"question": "What is the warranty period for the Lyra-C robot?", "expected_route": "docs", "expected_sources": ["product_faq.md"], "must_include": ["2-year"]}
+{"question": "How many reviewers does a change to robot safety systems need?", "expected_route": "docs", "expected_sources": ["onboarding_guide.md"], "must_include": ["two"]}
+{"question": "Which region had the highest total revenue in 2026-Q3?", "expected_route": "data", "must_include": ["North America"]}
+{"question": "What was the total revenue in 2026-Q3 across all regions?", "expected_route": "data", "must_include": ["9527800"]}
+{"question": "How many support tickets are still open for Orion-D?", "expected_route": "data", "must_include": ["7"]}
+{"question": "How many P1 support tickets were there?", "expected_route": "data", "must_include": ["13"]}
+{"question": "What is the Orion-D warranty period, and how many Orion-D support tickets are still open?", "expected_route": "both", "expected_sources": ["product_faq.md"], "must_include": ["3-year", "7"]}
+{"question": "What first-response time does premium support promise for P1 incidents, and how many P1 tickets have we had?", "expected_route": "both", "expected_sources": ["product_faq.md"], "must_include": ["1 hour", "13"]}
